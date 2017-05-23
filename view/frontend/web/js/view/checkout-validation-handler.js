@@ -48,7 +48,7 @@ define(
                     }
                     addressModel.originalAddress(response.extension_attributes.original_address);
                     if (typeof response.extension_attributes.error_message !== 'undefined') {
-                        addressModel.error(response.extension_attributes.error_message)
+                        addressModel.error(response.extension_attributes.error_message);
                     }
                     addressValidationForm.fillValidateForm(this.options.validateAddressContainerSelector);
                     if (!addressModel.isDifferent() && addressModel.error() == null) {
