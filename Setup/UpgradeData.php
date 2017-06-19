@@ -30,11 +30,12 @@ class UpgradeData implements UpgradeDataInterface
         if (version_compare($context->getVersion(), '1.0.0', '<' )) {
 
             // Only copy data and drop columns from "sales_invoice" if the columns exist
+            $tableName = $setup->getTable('sales_invoice');
             if (
                 $setup->getConnection(self::$connectionName)
-                    ->tableColumnExists('sales_invoice', 'avatax_is_unbalanced')
+                    ->tableColumnExists($tableName, 'avatax_is_unbalanced')
                 && $setup->getConnection(self::$connectionName)
-                    ->tableColumnExists('sales_invoice', 'base_avatax_tax_amount')
+                    ->tableColumnExists($tableName, 'base_avatax_tax_amount')
             ) {
                 // Copy any existing AvaTax data from core Invoice table into new AvaTax Invoice table
                 $select = $setup->getConnection(self::$connectionName)->select()
