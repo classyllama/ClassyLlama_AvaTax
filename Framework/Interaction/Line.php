@@ -167,6 +167,10 @@ class Line
             return false;
         }
         $product = $item->getOrderItem()->getProduct();
+        
+        if ($product === null) {
+            return false;
+        }
 
         $itemCode = $this->taxClassHelper->getItemCodeOverride($product);
         if (!$itemCode) {
@@ -215,6 +219,10 @@ class Line
 
         $product = $item->getOrderItem()->getProduct();
 
+        if ($product === null) {
+            return false;
+        }
+        
         $itemCode = $this->taxClassHelper->getItemCodeOverride($product);
         if (!$itemCode) {
             $itemCode = $item->getSku();
