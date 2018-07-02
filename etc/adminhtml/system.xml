@@ -27,11 +27,9 @@
                 </field>
                 <field id="tax_settings_header" translate="label" type="label" sortOrder="1001" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label><![CDATA[<strong>Tax Calculation Settings</strong>]]></label>
-                    <!-- Reference: https://github.com/magento/magento2/issues/2340
                     <depends>
                         <field id="enabled">1</field>
                     </depends>
-                    -->
                 </field>
                 <field id="tax_mode" translate="label" type="select" sortOrder="1002" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Tax Mode</label>
@@ -89,11 +87,9 @@
                 </field>
                 <field id="connection_settings_header" translate="label" type="label" sortOrder="1010" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label><![CDATA[<strong>Connection Settings</strong>]]></label>
-                    <!-- Reference: https://github.com/magento/magento2/issues/2340
                     <depends>
                         <field id="enabled">1</field>
                     </depends>
-                    -->
                 </field>
                 <field id="live_mode" translate="label" type="select" sortOrder="1020" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Mode</label>
@@ -145,11 +141,9 @@
                 </field>
                 <field id="error_handling_header" translate="label" type="label" sortOrder="2000" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label><![CDATA[<strong>Error Handling Settings</strong>]]></label>
-                    <!-- Reference: https://github.com/magento/magento2/issues/2340
                     <depends>
                         <field id="enabled">1</field>
                     </depends>
-                    -->
                 </field>
                 <field id="error_action" translate="label comment" type="select" sortOrder="2010" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Error Action</label>
@@ -177,11 +171,9 @@
                 </field>
                 <field id="data_mapping_header" translate="label" type="label" sortOrder="3000" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label><![CDATA[<strong>Data Mapping</strong>]]></label>
-                    <!-- Reference: https://github.com/magento/magento2/issues/2340
                     <depends>
                         <field id="enabled">1</field>
                     </depends>
-                    -->
                 </field>
                 <field id="customer_code_format" translate="label comment" type="select" sortOrder="3010" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Customer Code Format</label>
@@ -281,11 +273,9 @@
                 </field>
                 <field id="address_validation_header" translate="label" type="label" sortOrder="4000" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label><![CDATA[<strong>Address Validation Settings</strong>]]></label>
-                    <!-- Reference: https://github.com/magento/magento2/issues/2340
                     <depends>
                         <field id="enabled">1</field>
                     </depends>
-                    -->
                 </field>
                 <field id="address_validation_enabled" translate="label comment" type="select" sortOrder="4010" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Enable Address Validation</label>
@@ -342,11 +332,9 @@
                 </field>
                 <field id="logging_settings_header" translate="label" type="label" sortOrder="5000" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label><![CDATA[<strong>Logging Settings</strong>]]></label>
-                    <!-- Reference: https://github.com/magento/magento2/issues/2340
                     <depends>
                         <field id="enabled">1</field>
                     </depends>
-                    -->
                 </field>
                 <field id="logging_db_level" translate="label" type="select" sortOrder="5010" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Database Log Level</label>
@@ -438,11 +426,9 @@
                 <field id="queue_processing_header" translate="label" type="label" sortOrder="6000" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label><![CDATA[<strong>Queue Processing Settings</strong>]]></label>
                     <comment><![CDATA[If <strong><a href="#tax_avatax">Tax Mode</a></strong> is set to <strong>Estimate Tax & Submit Transactions to AvaTax</strong>, then queue processing is enabled. Otherwise the queue will not submit invoices and credit memos to AvaTax as transaction submissions are disabled.]]></comment>
-                    <!-- Reference: https://github.com/magento/magento2/issues/2340
                     <depends>
                         <field id="enabled">1</field>
                     </depends>
-                    -->
                 </field>
                 <field id="queue_admin_notification_enabled" translate="label" type="select" sortOrder="6010" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Enable Queue Admin Notification</label>
