@@ -13,7 +13,7 @@
  * @license    http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  */
 
-namespace ClassyLlama\AvaTax\Tests\Integration\Model\Tax\Sales\Total\Quote;
+namespace ClassyLlama\AvaTax\Test\Integration\Model\Tax\Sales\Total\Quote;
 
 use Magento\Tax\Model\Calculation;
 use Magento\TestFramework\Helper\Bootstrap;

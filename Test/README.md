@@ -9,9 +9,9 @@ The integration tests cover two things:
 1. Build multiple quotes and request AvaTax tax rates for the quotes. The rates are then applied to the quotes and the values on the quote and quote items are verified against the "expected_results" arrays in the `vendor/classyllama/module-avatax/Tests/Integration/_files/scenarios/*.php` files to ensure they contain the proper values.
     
 2. Since Magento may change how tax rates are applied to quotes and quote items, there are also tests in place that compare quotes/quote items after running through AvaTax tax calculation vs native Magento tax calculation. Scenarios with "compare_with_native_tax_calculation" set to true are compared to native Magento tax calculation. The following properties are using for determining which fields to compare:
-    * `\ClassyLlama\AvaTax\Tests\Integration\Model\Tax\Sales\Total\Quote\TaxTest::$quoteAddressFieldsEnsureMatch`
-    * `\ClassyLlama\AvaTax\Tests\Integration\Model\Tax\Sales\Total\Quote\TaxTest::$quoteAddressFieldsEnsureDiff`
-    * `\ClassyLlama\AvaTax\Tests\Integration\Model\Tax\Sales\Total\Quote\TaxTest::$quoteItemFieldsEnsureMatch`
+    * `\ClassyLlama\AvaTax\Test\Integration\Model\Tax\Sales\Total\Quote\TaxTest::$quoteAddressFieldsEnsureMatch`
+    * `\ClassyLlama\AvaTax\Test\Integration\Model\Tax\Sales\Total\Quote\TaxTest::$quoteAddressFieldsEnsureDiff`
+    * `\ClassyLlama\AvaTax\Test\Integration\Model\Tax\Sales\Total\Quote\TaxTest::$quoteItemFieldsEnsureMatch`
 
 The following scenarios are tested:
 
@@ -46,8 +46,8 @@ Follow these steps to run the integration tests:
 
     1. Update the `dev/tests/integration/etc/install-config-mysql.php.dist` file with your MySQL credentials.
 
-1. You'll need an AvaTax development account setup with the rules specified in `vendor/classyllama/module-avatax/Tests/Integration/credentials.php.dist`
+1. You'll need an AvaTax development account setup with the rules specified in `vendor/classyllama/module-avatax/Test/Integration/credentials.php.dist`
 
-    1. Copy the `vendor/classyllama/module-avatax/Tests/Integration/credentials.php.dist` file to `vendor/classyllama/module-avatax/Tests/Integration/credentials.php` and update the "Company Code", "Account Number", and "License Key" values
+    1. Copy the `vendor/classyllama/module-avatax/Test/Integration/credentials.php.dist` file to `vendor/classyllama/module-avatax/Test/Integration/credentials.php` and update the "Company Code", "Account Number", and "License Key" values
 
-1. Run the integration tests using this command: `vendor/bin/phpunit --debug -c <PATH_TO_INSTALL>/vendor/classyllama/module-avatax/Tests/Integration/phpunit.xml`
+1. Run the integration tests using this command: `vendor/bin/phpunit --debug -c <PATH_TO_INSTALL>/vendor/classyllama/module-avatax/Test/Integration/phpunit.xml`

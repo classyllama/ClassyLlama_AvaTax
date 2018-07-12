@@ -14,7 +14,7 @@
  */
 
 use Magento\Tax\Model\Calculation;
-use ClassyLlama\AvaTax\Tests\Integration\Model\Tax\Sales\Total\Quote\SetupUtil;
+use ClassyLlama\AvaTax\Test\Integration\Model\Tax\Sales\Total\Quote\SetupUtil;
 
 /**
  * This test verifies the conversion rounding logic in

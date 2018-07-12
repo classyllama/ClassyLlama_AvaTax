@@ -14,7 +14,7 @@
  */
 
 use Magento\Tax\Model\Calculation;
-use ClassyLlama\AvaTax\Tests\Integration\Model\Tax\Sales\Total\Quote\SetupUtil;
+use ClassyLlama\AvaTax\Test\Integration\Model\Tax\Sales\Total\Quote\SetupUtil;
 
 $taxCalculationData['product_tax_classes'] = [
     'config_data' => [

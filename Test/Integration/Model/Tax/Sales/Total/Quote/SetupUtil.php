@@ -13,7 +13,7 @@
  * @license    http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  */
 
-namespace ClassyLlama\AvaTax\Tests\Integration\Model\Tax\Sales\Total\Quote;
+namespace ClassyLlama\AvaTax\Test\Integration\Model\Tax\Sales\Total\Quote;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Tax\Model\Config;
@@ -202,7 +202,7 @@ class SetupUtil
 
     /**
      * Storage for customer so that it can be reused by this test
-     * @see \ClassyLlama\AvaTax\Tests\Integration\Model\Tax\Sales\Total\Quote\TaxTest::testNativeVsMagentoTaxCalculation
+     * @see \ClassyLlama\AvaTax\Test\Integration\Model\Tax\Sales\Total\Quote\TaxTest::testNativeVsMagentoTaxCalculation
      *
      * @var null
      */
