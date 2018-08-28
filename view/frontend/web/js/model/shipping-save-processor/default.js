@@ -22,6 +22,7 @@ define(
         'Magento_Checkout/js/model/error-processor',
         'Magento_Checkout/js/model/full-screen-loader',
         'Magento_Checkout/js/action/select-billing-address',
+        'Magento_Checkout/js/model/shipping-save-processor/payload-extender',
         'ClassyLlama_AvaTax/js/view/checkout-validation-handler',
         'Magento_Ui/js/modal/alert'
     ],
@@ -35,6 +36,7 @@ define(
         errorProcessor,
         fullScreenLoader,
         selectBillingAddressAction,
+        payloadExtender,
         checkoutValidationHandler,
         alert
     ) {
@@ -57,6 +59,8 @@ define(
                         shipping_carrier_code: quote.shippingMethod().carrier_code
                     }
                 };
+
+                payloadExtender(payload);
 
                 fullScreenLoader.startLoader();
 
