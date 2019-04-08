@@ -1,3 +1,9 @@
+# Deprecation Notice
+
+This extension has been deprecated in favor of this repo: https://github.com/avadev/Avalara-AvaTax-for-Magento2. Classy Llama is no longer providing support for this extension. Refer to [these details](https://github.com/avadev/Avalara-AvaTax-for-Magento2#support) for how to request support.
+
+If you've installed this extension via Composer, you follow [the instructions here](https://github.com/avadev/Avalara-AvaTax-for-Magento2/blob/master/docs/getting-started.md#install-via-composer) to switch to using the new repo.
+
 # About Avalara's AvaTax
 
 Agile, successful companies focus on their core business and outsource complex, administrative functions – such as payroll and sales tax management – to the experts. Avalara can address your sales tax challenges with AvaTax. It’s the fastest, easiest, most accurate and affordable way to calculate sales tax; manage exemption certificates; file returns; and remit payments across multiple tax regions. Our tax decision engine determines rates based on 100,000+ taxability rules in 11,000+ taxing jurisdictions and instantly applies them to each transaction within your Magento shopping cart. 
