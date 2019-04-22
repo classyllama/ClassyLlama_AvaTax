@@ -12,5 +12,6 @@
         "psr-4": {
             "ClassyLlama\\AvaTax\\": ""
         }
-    }
+    },
+    "abandoned": "avalara/avatax-magento"
 }
